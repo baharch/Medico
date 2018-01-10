@@ -36,7 +36,7 @@ public class AddDrActivity extends AppCompatActivity {
     @Override
     protected void onDestroy(){
         super.onDestroy();
-        Realm.close();
+//        Realm.close();
     }
     private void findViews(){
         mAddButton=findViewById(R.id.activity_add_dr_Button_add);

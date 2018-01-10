@@ -1,6 +1,7 @@
 package org.bahar.medico.model;
 
 import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
 import io.realm.annotations.Required;
 
 /**
@@ -10,7 +11,7 @@ import io.realm.annotations.Required;
 public class Categories extends RealmObject {
     @Required
     private String category;
-    @Required
+    @PrimaryKey
     private Double category_ID;
 
     public String getCategory() {

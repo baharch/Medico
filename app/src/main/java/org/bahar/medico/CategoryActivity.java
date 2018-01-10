@@ -15,12 +15,12 @@ import java.util.ArrayList;
 
 public class CategoryActivity extends AppCompatActivity {
 
-    Toolbar toolbar;
-    CollapsingToolbarLayout collapsingToolbarLayoutAndroid;
-    CoordinatorLayout rootLayoutAndroid;
-    GridView gridView;
-    Context context;
-    ArrayList arrayList;
+    Toolbar mToolbar;
+    CollapsingToolbarLayout mCollapsingToolbarLayoutAndroid;
+    CoordinatorLayout mRootLayoutAndroid;
+    GridView mGridView;
+    Context mContext;
+    ArrayList mArrayList;
 
     public static String[] gridViewStrings = {
             "دندانپزشک ",
@@ -65,13 +65,13 @@ public class CategoryActivity extends AppCompatActivity {
 
         findViews();
 
-        setSupportActionBar(toolbar);
-        gridView.setAdapter(new CategoryAdapter(this, gridViewStrings, gridViewImages));
+        setSupportActionBar(mToolbar);
+
+        mGridView.setAdapter(new CategoryAdapter(this, gridViewStrings, gridViewImages));
 
         initInstances();
 
-
-        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        mGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v, int position, long id){
 
                 Intent mIntent = new Intent(getApplicationContext(), ListsActivity.class);
@@ -86,13 +86,13 @@ public class CategoryActivity extends AppCompatActivity {
     }
 
     private void initInstances() {
-        collapsingToolbarLayoutAndroid.setTitle("  دکتریاب  ");
+        mCollapsingToolbarLayoutAndroid.setTitle("  دکتریاب  ");
     }
 
     private void findViews(){
-        toolbar =  findViewById(R.id.toolbar);
-        gridView =  findViewById(R.id.grid);
-        rootLayoutAndroid =  findViewById(R.id.android_coordinator_layout);
-        collapsingToolbarLayoutAndroid = findViewById(R.id.collapsing_toolbar_android_layout);
+        mToolbar =  findViewById(R.id.activityCategoryToolbar);
+        mGridView =  findViewById(R.id.activityCategoryGridViewMain);
+        mRootLayoutAndroid =  findViewById(R.id.activityCategoryCoordinatorLayout);
+        mCollapsingToolbarLayoutAndroid = findViewById(R.id.activityCategoryCollapsingToolbarLayout);
     }
 }
