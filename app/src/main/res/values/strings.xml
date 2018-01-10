@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Medico</string>
+   <!--Add Dr-->
+    <string name="category">گروه تخصصی</string>
+    <string name="name">نام</string>
+    <string name="family">نام خانوادگی</string>
+    <string name="expert">تخصص</string>
+    <string name="description">توضیحات</string>
+    <string name="address">آدرس</string>
+    <string name="tel">تلفن</string>
+    <string name="web">سایت</string>
+    <string name="photo">عکس</string>
+   <!--Buttons-->
+    <string name="add">ثبت</string>
+    <string name="cancel">انصراف</string>
+    <string name="edit">ویرایش</string>
+    <string name="select">انتخاب</string>
+    <string name="search">جستجو</string>
+    <string name="delete">حذف</string>
+    <string name="upload_photo">بارگذاری عکس</string>
+    <string name="add_comment">ثبت نظر</string>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    android:id="@+id/layout_list_cardview_maincv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:elevation="4dp"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/layout_list_imageview_dr_pic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="18dp"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/layout_list_textview_dr_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/layout_list_imageview_dr_pic"
+            android:paddingBottom="5dp"
+            android:text="Viral Android"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/layout_list_textview_dr_degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_list_textview_dr_name"
+            android:layout_toRightOf="@+id/layout_list_imageview_dr_pic"
+            android:text="Free android tutorials and examples for beginners and expert."
+            android:textColor="#8b8b8b" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
